@@ -9,14 +9,14 @@ namespace Technology
         public string OS { get; set; }
         public string Processor { get; set; }
         public double RetailCost { get; set; }
-        public string ModelName { get; set; }
+        public readonly string modelName;
 
         public Computer(string argOS, string argProcessor, float argRetailCost, string argModelName)
         {
             OS = argOS;
             Processor = argProcessor;
             RetailCost = argRetailCost;
-            ModelName = argModelName;
+            modelName = argModelName;
         }
 
         public void PrintOS()
@@ -26,7 +26,7 @@ namespace Technology
 
         public void GiveDiscount()
         {
-            RetailCost -= RetailCost * .05;
+           RetailCost -= RetailCost * .05;
         }
     }
 }

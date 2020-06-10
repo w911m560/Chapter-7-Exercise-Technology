@@ -4,16 +4,13 @@ using System.Text;
 
 namespace Technology
 {
-    public class Laptop : Computer
+    public class Laptop : AbstractEntity
     {
         private int hddTempCelsius;
 
-        public Laptop(string argOS, string argProcessor, float argRetailCost, string argModelName) : base(argOS, argProcessor, argRetailCost, argModelName)
+        public Laptop(int argHddTempCelius, string argOS, string argProcessor, float argRetailCost, string argModelName) : base(argOS, argProcessor, argRetailCost, argModelName)
         {
-            this.OS = argOS;
-            this.Processor = argProcessor;
-            this.RetailCost = argRetailCost;
-            this.ModelName = argModelName;
+            hddTempCelsius = argHddTempCelius;
         }
 
         public bool isHddOverheated()

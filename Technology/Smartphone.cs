@@ -4,16 +4,13 @@ using System.Text;
 
 namespace Technology
 {
-    public class Smartphone : Computer
+    public class Smartphone : AbstractEntity
     {
         private bool hasCompass;
 
-        public Smartphone(string argOS, string argProcessor, float argRetailCost, string argModelName) : base(argOS, argProcessor, argRetailCost, argModelName)
+        public Smartphone(bool argHasCompas, string argOS, string argProcessor, float argRetailCost, string argModelName) : base(argOS, argProcessor, argRetailCost, argModelName)
         {
-            this.OS = argOS;
-            this.Processor = argProcessor;
-            this.RetailCost = argRetailCost;
-            this.ModelName = argModelName;
+            hasCompass = argHasCompas;   
         }
 
         public void PrintCompassSpec()
@@ -29,5 +26,4 @@ namespace Technology
         }
     }
 
-}
 }

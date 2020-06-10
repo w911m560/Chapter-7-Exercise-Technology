@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Technology", "Technology\Technology.csproj", "{54FDA23E-08AB-4F7B-8B9D-598AC52F2433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Technology", "Technology\Technology.csproj", "{54FDA23E-08AB-4F7B-8B9D-598AC52F2433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnologyTests", "TechnologyTests\TechnologyTests.csproj", "{5CE6D464-6ADB-42FE-9FBB-30B7F66625B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnologyTests", "TechnologyTests\TechnologyTests.csproj", "{5CE6D464-6ADB-42FE-9FBB-30B7F66625B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54FDA23E-08AB-4F7B-8B9D-598AC52F2433} = {54FDA23E-08AB-4F7B-8B9D-598AC52F2433}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
